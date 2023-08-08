@@ -10,7 +10,8 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var todos: [Todo]
+    // @Query private var todos: [Todo]
+    @Query(sort: \Todo.creationDate, order: .reverse) private var todos: [Todo]
 
     var body: some View {
         NavigationSplitView {
