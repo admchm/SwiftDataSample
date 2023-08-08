@@ -14,6 +14,7 @@
 		463ABAD92A824CA700533252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463ABAD82A824CA700533252 /* Preview Assets.xcassets */; };
 		463ABAE12A825B8100533252 /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAE02A825B8100533252 /* RGBColor.swift */; };
 		463ABAE32A825BCD00533252 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAE22A825BCD00533252 /* Tag.swift */; };
+		463ABAE72A826FDF00533252 /* DetailTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAE62A826FDF00533252 /* DetailTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		463ABAD82A824CA700533252 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		463ABAE02A825B8100533252 /* RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
 		463ABAE22A825BCD00533252 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		463ABAE62A826FDF00533252 /* DetailTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				463ABAD12A824CA500533252 /* ContentView.swift */,
 				463ABAD52A824CA700533252 /* Assets.xcassets */,
 				463ABAD72A824CA700533252 /* Preview Content */,
+				463ABAE62A826FDF00533252 /* DetailTodoView.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				463ABAD22A824CA500533252 /* ContentView.swift in Sources */,
 				463ABAD42A824CA500533252 /* Todo.swift in Sources */,
 				463ABAE32A825BCD00533252 /* Tag.swift in Sources */,
+				463ABAE72A826FDF00533252 /* DetailTodoView.swift in Sources */,
 				463ABAD02A824CA500533252 /* TodoApp.swift in Sources */,
 				463ABAE12A825B8100533252 /* RGBColor.swift in Sources */,
 			);
