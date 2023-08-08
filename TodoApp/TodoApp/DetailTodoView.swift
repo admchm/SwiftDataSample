@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct DetailTodoView: View {
-    let todo: Todo
+    @Bindable var todo: Todo
     
     var body: some View {
         VStack {
-            Text(todo.name)
+            TextField("new todo", text: $todo.name)
+                .textFieldStyle(.roundedBorder)
             
-            Image(systemName: todo.isDone ? "checkmark.circle.fill" : "circle")
-                .foregroundStyle(todo.isDone ? .green : .gray)
+            Toggle(todo.isDone ? "Done" : "Open" , isOn: $todo.isDone)
         }
-        
+                .padding()
     }
 }
 
