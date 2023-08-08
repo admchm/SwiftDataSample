@@ -11,20 +11,34 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     // @Query private var todos: [Todo]
-    @Query(sort: \Todo.creationDate, order: .reverse) private var todos: [Todo]
-
+    // @Query(sort: \Todo.creationDate, order: .reverse) private var todos: [Todo]
+    // @Query(sort: [.init(\Todo.creationDate, order: .reverse)], animation: .bouncy) private var todos: [Todo]
+    
+    @Query(sort: [.init(\Todo.name), .init(\Todo.creationDate, order: .reverse)], animation: .bouncy) private var todos: [Todo]
+    
+    @Query(filter: #Predicate<Todo>{ !$0.isDone },
+           sort: [.init(\Todo.creationDate, order: .reverse)],
+           animation: .bouncy) private var remainingTodos: [Todo]
+    
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(todos) { todo in
-                    NavigationLink {
-                        //Text("Item at \(item.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                        DetailTodoView(todo: todo)
-                    } label: {
+                Section("All todos:") {
+                    ForEach(todos) { todo in
+                        NavigationLink {
+                            DetailTodoView(todo: todo)
+                        } label: {
+                            TodoRow(todo: todo)
+                        }
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+                
+                Section("Still not done:") {
+                    ForEach(remainingTodos) { todo in
                         TodoRow(todo: todo)
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -40,19 +54,17 @@ struct ContentView: View {
             Text("Select an item")
         }
     }
-
+    
     private func addItem() {
         withAnimation {
             let newItem = Todo(name: "New item")
             modelContext.insert(newItem)
         }
     }
-
+    
     private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(todos[index])
-            }
+        for index in offsets {
+            modelContext.delete(todos[index])
         }
     }
 }
