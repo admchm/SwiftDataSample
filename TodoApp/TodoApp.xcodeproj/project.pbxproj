@@ -62,9 +62,9 @@
 				463ABADF2A825B5500533252 /* model */,
 				463ABACF2A824CA500533252 /* TodoApp.swift */,
 				463ABAD12A824CA500533252 /* ContentView.swift */,
+				463ABAE62A826FDF00533252 /* DetailTodoView.swift */,
 				463ABAD52A824CA700533252 /* Assets.xcassets */,
 				463ABAD72A824CA700533252 /* Preview Content */,
-				463ABAE62A826FDF00533252 /* DetailTodoView.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";

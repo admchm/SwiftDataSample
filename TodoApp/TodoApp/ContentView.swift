@@ -15,11 +15,17 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(todos) { item in
+                ForEach(todos) { todo in
                     NavigationLink {
-                        Text("Item at \(item.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        //Text("Item at \(item.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        DetailTodoView(todo: todo)
                     } label: {
-                        Text(item.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        //Text(todo.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        HStack {
+                            Image(systemName: todo.isDone ? "checkmark.circle.fill" : "circle")
+                                .foregroundStyle(todo.isDone ? .green : .gray)
+                            Text(todo.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        }
                     }
                 }
                 .onDelete(perform: deleteItems)
