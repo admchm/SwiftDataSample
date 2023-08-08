@@ -20,12 +20,7 @@ struct ContentView: View {
                         //Text("Item at \(item.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
                         DetailTodoView(todo: todo)
                     } label: {
-                        //Text(todo.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))
-                        HStack {
-                            Image(systemName: todo.isDone ? "checkmark.circle.fill" : "circle")
-                                .foregroundStyle(todo.isDone ? .green : .gray)
-                            Text(todo.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))
-                        }
+                        TodoRow(todo: todo)
                     }
                 }
                 .onDelete(perform: deleteItems)

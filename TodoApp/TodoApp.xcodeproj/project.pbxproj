@@ -15,6 +15,7 @@
 		463ABAE12A825B8100533252 /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAE02A825B8100533252 /* RGBColor.swift */; };
 		463ABAE32A825BCD00533252 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAE22A825BCD00533252 /* Tag.swift */; };
 		463ABAE72A826FDF00533252 /* DetailTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAE62A826FDF00533252 /* DetailTodoView.swift */; };
+		463ABAE92A827A3900533252 /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAE82A827A3900533252 /* TodoRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		463ABAE02A825B8100533252 /* RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
 		463ABAE22A825BCD00533252 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		463ABAE62A826FDF00533252 /* DetailTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTodoView.swift; sourceTree = "<group>"; };
+		463ABAE82A827A3900533252 /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				463ABADF2A825B5500533252 /* model */,
 				463ABACF2A824CA500533252 /* TodoApp.swift */,
+				463ABAE82A827A3900533252 /* TodoRow.swift */,
 				463ABAD12A824CA500533252 /* ContentView.swift */,
 				463ABAE62A826FDF00533252 /* DetailTodoView.swift */,
 				463ABAD52A824CA700533252 /* Assets.xcassets */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				463ABAD22A824CA500533252 /* ContentView.swift in Sources */,
+				463ABAE92A827A3900533252 /* TodoRow.swift in Sources */,
 				463ABAD42A824CA500533252 /* Todo.swift in Sources */,
 				463ABAE32A825BCD00533252 /* Tag.swift in Sources */,
 				463ABAE72A826FDF00533252 /* DetailTodoView.swift in Sources */,
