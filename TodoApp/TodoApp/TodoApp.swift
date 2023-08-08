@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct TodoAppApp: App {
+struct TodoApp: App {
 
     var body: some Scene {
         WindowGroup {

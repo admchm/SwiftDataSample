@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		463ABAD02A824CA500533252 /* TodoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABACF2A824CA500533252 /* TodoAppApp.swift */; };
+		463ABAD02A824CA500533252 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABACF2A824CA500533252 /* TodoApp.swift */; };
 		463ABAD22A824CA500533252 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAD12A824CA500533252 /* ContentView.swift */; };
 		463ABAD42A824CA500533252 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ABAD32A824CA500533252 /* Todo.swift */; };
 		463ABAD62A824CA700533252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463ABAD52A824CA700533252 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		463ABACC2A824CA500533252 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		463ABACF2A824CA500533252 /* TodoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppApp.swift; sourceTree = "<group>"; };
+		463ABACF2A824CA500533252 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		463ABAD12A824CA500533252 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		463ABAD32A824CA500533252 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		463ABAD52A824CA700533252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				463ABADF2A825B5500533252 /* model */,
-				463ABACF2A824CA500533252 /* TodoAppApp.swift */,
+				463ABACF2A824CA500533252 /* TodoApp.swift */,
 				463ABAD12A824CA500533252 /* ContentView.swift */,
 				463ABAD52A824CA700533252 /* Assets.xcassets */,
 				463ABAD72A824CA700533252 /* Preview Content */,
@@ -157,7 +157,7 @@
 				463ABAD22A824CA500533252 /* ContentView.swift in Sources */,
 				463ABAD42A824CA500533252 /* Todo.swift in Sources */,
 				463ABAE32A825BCD00533252 /* Tag.swift in Sources */,
-				463ABAD02A824CA500533252 /* TodoAppApp.swift in Sources */,
+				463ABAD02A824CA500533252 /* TodoApp.swift in Sources */,
 				463ABAE12A825B8100533252 /* RGBColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

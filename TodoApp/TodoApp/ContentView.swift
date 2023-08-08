@@ -41,7 +41,7 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Todo(timestamp: Date())
+            let newItem = Todo(name: "New item")
             modelContext.insert(newItem)
         }
     }
